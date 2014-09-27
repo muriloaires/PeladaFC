@@ -1,6 +1,13 @@
 div.background-menu {
-	background-image: url("TELA_MENU_PRINCIPAL_SEM_LOGO.png");
+	background-image: url("../img/res/background.png");
 	background-size:100% 100%;
     background-repeat: no-repeat;
 }
 
+div.logotipo{
+	background-image: url("../img/res/logo_peladaFC/LOGO_PELADA_FC.png");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	background-color: none;
+	height:110px;
+}
