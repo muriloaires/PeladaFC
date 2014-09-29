@@ -4,10 +4,14 @@ div.background-menu {
     background-repeat: no-repeat;
 }
 
-div.logotipo{
-	background-image: url("../img/res/logo_peladaFC/LOGO_PELADA_FC.png");
-	background-repeat: no-repeat;
-	background-size:100% 100%;
-	background-color: none;
-	height:110px;
+.responsive{
+	max-width: 500px; 
+    width: 100%; 
+    height: auto; 
+}
+.responsive  img{
+    max-width: 500px;   /* Máximo da largura da imagem */
+    width: 100%;
+    max-height: 300px;  /* Máximo da altura da imagem */
+    min-height: auto;      /* Mínimo da altura, por padrão “auto” */
 }
