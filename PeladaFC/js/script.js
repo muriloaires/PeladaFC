@@ -23,7 +23,7 @@ var datetime = "" + currentdate.getDate() + "/"
             + currentdate.getMinutes() + ":" 
             + currentdate.getSeconds();
 var listItem = '<li><img src="img/jogador.png" class="ui-li-icon">'+player+'<span class="ui-li-count">'+datetime+'</span></li>';
- $('ul').append(listItem);
+ $('#lista-chegada').append(listItem);
  $("#lista-chegada").listview("refresh");
 });
 });
