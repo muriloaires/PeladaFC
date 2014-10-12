@@ -79,36 +79,83 @@
 		<div data-role="page" id="pagina-jogo-rapido" >
 
 			<div data-role="header" >
-			<a class="ui-shadow ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline">Button</a>
+				<a class="ui-shadow ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline">Button</a>
 				<h1>Jogadores</h1>
-<a  href="#popupInserir" data-rel="popup" data-position-to="window" class="ui-shadow ui-btn ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline">Button</a>
+				<a  href="#popupInserir" data-rel="popup" data-position-to="window" class="ui-shadow ui-btn ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline">Button</a>
 			</div><!-- /header -->
 
 			<div data-role="content" >
-			
-			<div data-role="popup" id="popupInserir" data-theme="a" class="ui-corner-all">
-    <form id="formularioInserir">
-        <div style="padding:10px 20px;">
-            <h3>Quem chegou?</h3>
-            <label for="un" class="ui-hidden-accessible">Nome:</label>
-            <input type="text" name="user" id="un" value="" placeholder="Nome do jogador" data-theme="a">
-            <a class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-edit" id="btInserir">Inserir</a>
-        </div>
-    </form>
-</div>
 
-<ul data-role="listview" id="lista-chegada">
-    <li><a href="#"><img src="img/jogador.png" class="ui-li-icon ui-corner-none">Jogador 1</a></li>
-    <li><a href="#"><img src="img/jogador.png" class="ui-li-icon">Jogador 2</a></li>
-    <li><a href="#"><img src="img/jogador.png" class="ui-li-icon">Jogador 3</a></li>
-    <li><a href="#"><img src="img/jogador.png" class="ui-li-icon">Jogador 4</a></li>
-    <li><a href="#"><img src="img/jogador.png" class="ui-li-icon ui-corner-none">Jogador 5</a></li>
-</ul>
+				<div data-role="popup" id="popupInserir" data-theme="a" class="ui-corner-all">
+					<form id="formularioInserir">
+						<div style="padding:10px 20px;">
+							<h3>Quem chegou?</h3>
+							<label for="un" class="ui-hidden-accessible">Nome:</label>
+							<input type="text" name="user" id="un" value="" placeholder="Nome do jogador" data-theme="a">
+							<a class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-edit" id="btInserir">Inserir</a>
+						</div>
+					</form>
+				</div>
+
+				<ul data-role="listview" id="lista-chegada" data-count-theme="b" data-icon="false">
+
+				</ul>
+
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#pagina-escalacao" class="ui-btn">Escalação</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /footer -->
+		</div>
+		
+		
+		<div data-role="page" id="pagina-escalacao" >
+
+			<div data-role="header" >
+				<h1>Escalaçao</h1>
+			</div><!-- /header -->
+
+			<div data-role="content" >
+
+
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#pagina-partida" class="ui-btn">Iniciar Partida</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /footer -->
+		</div>
+		
+				<div data-role="page" id="pagina-partida" >
+
+			<div data-role="header" >
+				<h1>Partida</h1>
+				<div class="ui-grid-d">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px"><img src="img/camisa1.png"/></div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">2</div></div>
+    <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px"><img src="img/versus.png"/></div></div>
+    <div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height:60px">3</div></div>
+    <div class="ui-block-e"><div class="ui-bar ui-bar-a" style="height:60px"><img src="img/camisa2.png"/></div></div>
+</div><!-- /grid-c -->
+			</div><!-- /header -->
+
+			<div data-role="content" >
+
 
 			</div>
 			<div data-role="footer" data-position="fixed">
 
 			</div><!-- /footer -->
 		</div>
+	
 	</body>
 </html>
